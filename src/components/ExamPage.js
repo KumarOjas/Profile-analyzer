@@ -62,6 +62,21 @@ const ExamPage = () => {
                         Visit Official Website
                     </a>
                 </div>
+
+                {exam.pwFeatures && (
+                    <div className="exam-section">
+                        <h2>PW-Style Resources</h2>
+                        <ul>
+                            {exam.pwFeatures.map((feature, index) => (
+                                <li key={index}>
+                                    <a href={feature.link} target="_blank" rel="noopener noreferrer" className="official-link">
+                                        {feature.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>

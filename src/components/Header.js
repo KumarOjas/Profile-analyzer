@@ -13,10 +13,15 @@ const Header = () => {
                         <span>Quality Education</span>
                     </div>
                     <ul className="nav-menu">
-                        <li><a href="#home">Home</a></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#courses">Courses</a></li>
                         <li><a href="#faculty">Faculty</a></li>
+                        <li><Link to="/premium">Premium</Link></li>
+                        <li><Link to="/forum">Forum</Link></li>
+                        <li><Link to="/gamification">Achievements</Link></li>
+                        <li><Link to="/social-challenges">Challenges</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div className="hamburger">

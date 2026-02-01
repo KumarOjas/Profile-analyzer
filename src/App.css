@@ -1,11 +1,35 @@
- the.App {
+/* Dark Mode Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --card-bg: #f8f9fa;
+  --border-color: #e9ecef;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #4dabf7;
+  --secondary-color: #adb5bd;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
   text-align: center;
 }
 
 .exam-nav {
-  background: #f8f9fa;
-
-  border-bottom: 1px solid #e9ecef;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
 }
 .exam-nav ul {
   display: flex;
@@ -23,7 +47,7 @@
 }
 
 .exam-nav a {
-  color: #007bff;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   padding: 5px 10px;
@@ -32,7 +56,7 @@
 }
 
 .exam-nav a:hover {
-  background: #e9ecef;
+  background: var(--border-color);
 }
 
 .App-logo {
