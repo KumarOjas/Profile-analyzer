@@ -13,7 +13,6 @@ const CareerMap = () => {
     });
 
     const [results, setResults] = useState(null);
-    const [isPremium, setIsPremium] = useState(false);
     const [currentUser, setCurrentUser] = useState(null);
     const [simulations, setSimulations] = useState([]);
     const [activeSimulation, setActiveSimulation] = useState(null);

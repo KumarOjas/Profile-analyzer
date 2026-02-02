@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Gamification.css';
 
 const Gamification = () => {
-    const [userPoints, setUserPoints] = useState(1250);
+    const [userPoints] = useState(1250);
 
     const badges = [
         { id: 1, name: 'First Login', icon: '🎯', earned: true },

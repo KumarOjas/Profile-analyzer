@@ -29,10 +29,7 @@ const Blog = () => {
         return userRole === 'mentor' || userRole === 'founder';
     };
 
-    // Check if current user is the founder
-    const isFounder = () => {
-        return userRole === 'founder';
-    };
+
 
     // Authentication and data fetching
     useEffect(() => {

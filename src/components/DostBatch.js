@@ -7,7 +7,7 @@ const DostBatch = () => {
     const [audioList, setAudioList] = useState([]);
     const [quizQuestions, setQuizQuestions] = useState([]);
     const [videoList, setVideoList] = useState([]);
-    const [currentUser, setCurrentUser] = useState(null);
+
     const [quizAnswers, setQuizAnswers] = useState({});
     const [quizScore, setQuizScore] = useState(0);
     const [showQuizResults, setShowQuizResults] = useState(false);

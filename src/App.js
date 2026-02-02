@@ -19,8 +19,7 @@ import DigitalDoubtMarket from './components/DigitalDoubtMarket';
 import LiveRankPrediction from './components/LiveRankPrediction';
 import ReferralSystem from './components/ReferralSystem';
 import SocialChallenges from './components/SocialChallenges';
-import ChatBot from './components/ChatBot';
-import AIStrategyGenerator from './components/AIStrategyGenerator';
+
 import DostBatch from './components/DostBatch';
 import OfflineExamBox from './components/OfflineExamBox';
 import MicroCredentials from './components/MicroCredentials';

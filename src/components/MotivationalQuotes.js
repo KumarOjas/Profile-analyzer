@@ -3,8 +3,6 @@ import './MotivationalQuotes.css';
 
 const MotivationalQuotes = () => {
     const [currentQuote, setCurrentQuote] = useState('');
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetchQuote();

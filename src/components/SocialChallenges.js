@@ -6,8 +6,7 @@ import './SocialChallenges.css';
 const SocialChallenges = () => {
     const [challenges, setChallenges] = useState([]);
     const [activeChallenge, setActiveChallenge] = useState(null);
-    const [userTeams, setUserTeams] = useState([]);
-    const [leaderboard, setLeaderboard] = useState([]);
+    const [leaderboard] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
     const [showCreateTeam, setShowCreateTeam] = useState(false);
     const [newTeam, setNewTeam] = useState({
@@ -90,7 +89,7 @@ const SocialChallenges = () => {
         });
 
         return () => unsubscribe();
-    }, []);
+    }, [sampleChallenges]);
 
     const createTeam = async () => {
         if (!currentUser || !newTeam.name.trim()) return;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Premium.css';
 
 const Premium = () => {
-    const [selectedPlan, setSelectedPlan] = useState(null);
+    const [selectedPlan] = useState(null);
 
     const plans = [
         {
